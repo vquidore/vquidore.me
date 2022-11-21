@@ -9,7 +9,7 @@
             h1 {
                 color: black;
                 background-color: antiquewhite;
-                text-align: center;
+                text-align: ceniter;
                 font-family: "Lucida Sans Typewriter", 
                 "Lucida Console", "monaco", 
                 "Bitstream Vera Sans Mono", monospace;
@@ -19,22 +19,37 @@
                 font-weight: bold;
                 
             }
+
+            
+
             body {
-                background-image: url(../imgs/station_background_blackwhite.jpg);
+                /* Background image CSS adapted from https://www.w3schools.com/html/html_images_background.asp */
+                background-image: url(../imgs/wdcr_encoded_photos/station_background_blackwhite.jpg);
                 background-color: darkslategray;
                 background-size: 2016px 1512px;
                 background-position: center;
                 overflow: scroll;
             }
+
+            /* Slideshow container adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto*/
+            .slideshow-container {
+                max-width: 700px;
+                max-height: 700px;
+                position: relative;
+                margin: auto;
+                background-color: darkgrey;
+            }
         </style>
     </head>
     <body>
+
         <h1>
             Encoded WDCR
         </h1>
-        <!--from -->
-        <figure>
 
-        </figure>
+        <!--again adapted from 
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto-->
+        <div class="slideshow-container">
+            
     </body>
 </html>
