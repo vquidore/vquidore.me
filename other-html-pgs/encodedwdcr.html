@@ -31,7 +31,8 @@
                 overflow: scroll;
             }
 
-            /* Slideshow container adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto*/
+            /* Slideshow container, active, fade, @keyframes, and @media
+            adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto */
             .slideshow-container {
                 max-width: 700px;
                 max-height: 700px;
@@ -39,8 +40,34 @@
                 margin: auto;
                 background-color: darkgrey;
             }
+
+            .img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .active {
+                background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+                animation-name: fade;
+                animation-duration: 4s;
+            }
+
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+                .text {font-size: 11px}
+            }
         </style>
     </head>
+
     <body>
 
         <h1>
@@ -48,8 +75,43 @@
         </h1>
 
         <!--again adapted from 
-            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto-->
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
         <div class="slideshow-container">
-            
+
+            <div class="mySlides fade">
+                <img src="imgs/wdcr_encoded_photos/2_old_students.jpg">
+            </div>
+              
+            <div class="mySlides fade">
+                <img src="imgs/wdcr_encoded_photos/99rock_stickers.jpg">
+            </div>
+              
+            <div class="mySlides fade">
+                <img src="imgs/wdcr_encoded_photos/art_news_award.jpg">
+            </div>
+              
+        </div>
+        <br>
+
+        <!--once more automatic slideshow script adapted from 
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+
+                slides[slideIndex-1].style.display = "block";  
+                setTimeout(showSlides, 4000); // Change image every 2 seconds
+            }
+        </script>
+                  
     </body>
 </html>
