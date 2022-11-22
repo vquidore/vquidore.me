@@ -27,14 +27,18 @@
                 background-size: 2016px 1512px;
                 background-position: center;
                 overflow: scroll;
+                margin: auto;
+                height: 100%;
             }
+
+
 
             /* Slideshow container, active, fade, @keyframes, and @media
             adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto */
             .slideshow-container {
                 width: 700px;
                 height: 600px;
-                position: absolute;
+                /*position: absolute;*/
                 margin: auto;
                 border: 20px;
                 padding: 15px;
@@ -51,15 +55,38 @@
             }
             */
 
-            /* Fading animation */
-            .fade {
-                animation-name: fader;
-                animation-duration: 4s;
+            /* Fading animation adapted from https://blog.hubspot.com/website/css-fade-in */
+            .fade-in-image {
+                animation: fadeInImage 5s;
+                -webkit-animation: fadeInImage 5s;
+                -moz-animation: fadeInImage 5s;
+                -o-animation: fadeInImage 5s;
+                -ms-animation: fade-in-image;
             }
 
-            @keyframes fader {
-                from {opacity: 1.0} 
-                to {opacity: 0.0}
+            @keyframes fadeInImage {
+                from {opacity: 0.0} 
+                to {opacity: 1.0}
+            }
+
+            @-moz-keyframes fadeInImage {
+                from {opacity: 0.0} 
+                to {opacity: 1.0}
+            }
+
+            @-webkit-keyframes fadeInImage {
+                from {opacity: 0.0} 
+                to {opacity: 1.0}
+            }
+
+            @-o-keyframes fadeInImage {
+                from {opacity: 0.0} 
+                to {opacity: 1.0}
+            }
+
+            @-ms-keyframes fadeInImage {
+                from {opacity: 0.0} 
+                to {opacity: 1.0}
             }
 
             /* On smaller screens, decrease text size */
@@ -79,15 +106,15 @@
             https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
         <div class="slideshow-container">
 
-            <div class="mySlides fader">
+            <div class="mySlides fade-in-image">
                 <img src="../imgs/wdcr_encoded_photos/2_old_students.jpg" width="378" height="504">
             </div>
               
-            <div class="mySlides fader">
+            <div class="mySlides fade-in-image">
                 <img src="../imgs/wdcr_encoded_photos/99rock_stickers.jpg" width="378" height="504">
             </div>
               
-            <div class="mySlides fader">
+            <div class="mySlides fade-in-image">
                 <img src="../imgs/wdcr_encoded_photos/art_news_award.jpg" width="378" height="504">
             </div>
               
