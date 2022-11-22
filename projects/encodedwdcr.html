@@ -31,7 +31,9 @@
                 height: 100%;
             }
             
-            .audio-container {
+            .audio-container {  
+                margin-top: 10px;
+                margin-bottom: 10px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -40,17 +42,17 @@
             /* Slideshow container, active, fade, @keyframes, and @media
             adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto */
             .slideshow-container {
-                width: 700px;
-                height: 600px;
+                width: 800px;
+                height: 700px;
                 /*position: absolute;*/
                 margin: auto;
                 border: 20px;
                 padding: 15px;
                 background-color: darkgrey;
                 overflow: hidden;
-                vertical-align: middle;
-                display: flex;
+                /* vertical-align: middle; */
                 align-items: center;
+                display: flex;
                 justify-content: center;
             }
 
@@ -114,7 +116,6 @@
                 <source src="../audio/wdcr_encoded_audio/wdcrencoded_test.ogg" type="audio/ogg">
             </audio>
         </div>
-
         <!--again adapted from 
             https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
         <div class="slideshow-container">
@@ -224,7 +225,7 @@
             </div>
 
             <div class="mySlides fade-in-out-image">
-                <img src="../imgs/wdcr_encoded_photos/isaac_phones_mouse.jpg" width="390" height="621">
+                <img src="../imgs/wdcr_encoded_photos/isaac_phones_mouse.jpg" width="378" height="504">
             </div>
 
             <div class="mySlides fade-in-out-image">
@@ -343,7 +344,9 @@
         <br>
 
         <!--once more automatic slideshow script adapted from 
-            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto 
+            also adapted from https://stackoverflow.com/questions/46519126/how-to-randomize-the-slideshow-image-in-html 
+            for randomization of slideshow -->
         <script>
             let slideIndex = 0;
             showSlides();
@@ -356,8 +359,8 @@
                 }
                 slideIndex++;
                 if (slideIndex > slides.length) {slideIndex = 1}    
-
-                slides[slideIndex-1].style.display = "block";  
+                var rand = Math.floor((Math.random() * slides.length));
+                slides[rand].style.display = "block";  
                 setTimeout(showSlides, 7000); // Change image every 2 seconds
             }
         </script>
