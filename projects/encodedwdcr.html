@@ -5,108 +5,7 @@
         <meta charset="utf-8">
         <meta name="description" content="An interactive digital media art project.">
         <meta name="keywords" content="WDCR radio webdcr V Quidore archives interactive digital art">
-        <style>
-            h1 {
-                color: black;
-                background-color: antiquewhite;
-                text-align: center;
-                font-family: "Lucida Sans Typewriter", 
-                "Lucida Console", "monaco", 
-                "Bitstream Vera Sans Mono", monospace;
-                font-style: normal;
-                font-variant: normal;
-                font-variant-ligatures: historical-ligatures;
-                font-weight: bold;
-                
-            }
-
-            body {
-                /* Background image CSS adapted from https://www.w3schools.com/html/html_images_background.asp */
-                background-image: url(../imgs/wdcr_encoded_photos/station_background_blackwhite.jpg);
-                background-color: darkslategray;
-                background-size: 2016px 1512px;
-                background-position: center;
-                overflow: scroll;
-                margin: auto;
-                height: 100%;
-            }
-            
-            .audio-container {  
-                margin-top: 10px;
-                margin-bottom: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            /* Slideshow container, active, fade, @keyframes, and @media
-            adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto */
-            .slideshow-container {
-                width: 800px;
-                height: 700px;
-                /*position: absolute;*/
-                margin: auto;
-                border: 20px;
-                padding: 15px;
-                background-color: darkgrey;
-                overflow: hidden;
-                /* vertical-align: middle; */
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                box-shadow: 5px 10px;
-            }
-
-            
-
-            /*
-            .active {
-                background-color: #717171;
-            }
-            */
-
-            
-
-            /* Fading animation adapted from https://blog.hubspot.com/website/css-fade-in 
-            https://stackoverflow.com/questions/30125705/css-how-to-make-an-element-fade-in-and-then-fade-out */
-            .fade-in-out-image {
-                animation: fadeInOut 15s linear forwards;
-                -webkit-animation: fadeInOut 15s linear forwards;
-                -moz-animation: fadeInOut 15s linear forwards;
-                -o-animation: fadeInOut 15s linear forwards;
-                -ms-animation: fadeInOut 15s linear forwards;
-            }
-
-            @keyframes fadeInOut {
-                0%,100% { opacity: 0; }
-                50% { opacity: 1; }
-            }
-
-            @-moz-keyframes fadeInOut {
-                0%,100% { opacity: 0; }
-                50% { opacity: 1; }
-            }
-
-            @-webkit-keyframes fadeInOut {
-                0%,100% { opacity: 0; }
-                50% { opacity: 1; }
-            }
-
-            @-o-keyframes fadeInOut {
-                0%,100% { opacity: 0; }
-                50% { opacity: 1; }
-            }
-
-            @-ms-keyframes fadeInOut {
-                0%,100% { opacity: 0; }
-                50% { opacity: 1; }
-            }
-
-            /* On smaller screens, decrease text size */
-            @media only screen and (max-width: 300px) {
-                .text {font-size: 11px}
-            }
-        </style>
+        <link rel="stylesheet" href="projects-css/encoded-wdcr-styles.css">
     </head>
 
     <body>
@@ -456,23 +355,6 @@
             https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto 
             also adapted from https://stackoverflow.com/questions/46519126/how-to-randomize-the-slideshow-image-in-html 
             for randomization of slideshow -->
-        <script>
-            let slideIndex = 0;
-            showSlides();
-
-            function showSlides() {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {slideIndex = 1}    
-                var rand = Math.floor((Math.random() * slides.length));
-                slides[slideIndex-1].style.display = "block";  
-                setTimeout(showSlides, 15000); // Change image every 15 seconds
-            }
-        </script>
-                  
+        <script src="projects-js/encoded-wdcr-slides.js"></script>          
     </body>
 </html>
