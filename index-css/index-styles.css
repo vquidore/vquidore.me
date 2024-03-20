@@ -7,8 +7,12 @@ h1 {
 body {
     background-color: antiquewhite;
 }
-   
-p {text-align: center;}
+
+h2 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%
+}
 
 img {
     display: block;
