@@ -2,6 +2,10 @@ h1 {
     background-color: antiquewhite;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
 body {
@@ -13,7 +17,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Courier New', Courier, monospace;
-    width: 50%
+    width: 60%
 }
 
 p {
@@ -21,12 +25,12 @@ p {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Courier New', Courier, monospace;
-    width: 50% 
+    width: 60% 
 }
 
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
   }
