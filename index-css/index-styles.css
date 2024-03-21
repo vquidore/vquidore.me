@@ -6,12 +6,13 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: baseline;
-  }
+}
   
 nav {
     margin: 0;
     font-size: 1.3em;
     text-shadow: 3px 3px 3px gray;
+    display: inline;
 }
 
 nav a {
