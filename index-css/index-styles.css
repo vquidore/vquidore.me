@@ -14,12 +14,14 @@ nav {
 }
 
 a {
-    text-decoration: none;
+    color: black;
+    text-decoration: underline;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
-a :hover {
+a:hover {
+    color:darkcyan;
     text-decoration: underline;
 }
 
@@ -32,7 +34,7 @@ h1 {
 
 h2 {
     background-color: antiquewhite;
-    text-align: center;
+    text-align: left;
     font-family: 'Courier New', Courier, monospace;
     display: block;
     margin-left: auto;
@@ -45,12 +47,10 @@ body {
 }
 
 h3 {
-    display: block;
+    display: inline;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    width: 60%;
 }
 
 p {
@@ -64,10 +64,12 @@ p {
 }
 
 img {
-    display: block;
+    display: inline;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    float: left;
   }
+
+.container {
+    display: inline-flex;
+}
