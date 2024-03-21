@@ -3,7 +3,7 @@ https://stackoverflow.com/questions/64309593/how-to-put-the-h1-element-on-the-sa
 
 header {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
     align-items: baseline;
 }
@@ -39,7 +39,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 90%;
 }
 
 body {
@@ -51,6 +51,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Courier New', Courier, monospace;
+    padding: 5%;
 }
 
 p {
@@ -72,4 +73,6 @@ img {
 
 .container {
     display: inline-flex;
+    width: 90%;
+    align-items: center;
 }
