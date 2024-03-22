@@ -6,6 +6,7 @@ header {
     width: 95%;
     justify-content: space-between;
     align-items: baseline;
+    padding-left: 5px;
 }
   
 nav {
@@ -41,7 +42,6 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
 }
 
 body {
@@ -53,8 +53,8 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 36px;
-    padding: 5%;
+    font-size: 5vw;
+    padding: 10px;
 }
 
 p {
