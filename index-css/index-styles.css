@@ -7,6 +7,7 @@ header {
     justify-content: space-between;
     align-items: baseline;
     padding-left: 5px;
+    background-color: antiquewhite;
 }
   
 nav {
@@ -28,11 +29,9 @@ a:hover {
 }
 
 h1 {
-    border-radius: 30px;
     padding-top: 0.5px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    padding-left: 20px;
 }
 
 h2 {
@@ -42,6 +41,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 5px;
 }
 
 body {
@@ -53,7 +53,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 5vw;
+    font-size: 3vw;
     padding: 10px;
 }
 
@@ -63,20 +63,17 @@ p {
     margin-right: auto;
     font-family: 'Courier New', Courier, monospace;
     width: 60%;
-    padding-top: 40px;
-    padding-bottom: 40px; 
 }
 
 img {
     display: inline;
     margin-left: auto;
     margin-right: auto;
-    padding:10px;
     float: left;
   }
 
 .container {
     display: inline-flex;
-    width: 95%;
+    padding: 5px;
     align-items: center;
 }
