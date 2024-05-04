@@ -96,5 +96,5 @@ ul li {
 }
 
 li::before{
-    content:'\U+1F57A';
+    content:"🕺";
 }
