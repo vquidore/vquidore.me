@@ -104,3 +104,12 @@ ul li {
 li::before{
     content:"🕺";
 }
+
+.comedy-subgroup {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.17em;
+    padding: 10px;
+}
