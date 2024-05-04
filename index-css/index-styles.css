@@ -57,6 +57,8 @@ h3 {
     padding: 10px;
 }
 
+
+
 p {
     display: block;
     margin-left: auto;
@@ -86,9 +88,9 @@ img {
 }
 
 ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 li::before{
-    content:"🕺";
+    content:'\U+1F57A';
 }
