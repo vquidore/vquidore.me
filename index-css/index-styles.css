@@ -30,7 +30,6 @@ a:hover {
 
 h1 {
     padding-top: 0.5px;
-    text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -78,8 +77,8 @@ img {
     margin-right: auto;
     float: left;
     padding-right: 10px;
-    width: 12%;
-    height: 12%;
+    width: 10%;
+    height: 10%;
   }
 
 .container {
