@@ -79,6 +79,8 @@ img {
     margin-right: auto;
     float: left;
     padding-right: 10px;
+    width: 15%;
+    height: 15%;
   }
 
 .container {
