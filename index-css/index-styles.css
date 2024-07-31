@@ -131,6 +131,6 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
