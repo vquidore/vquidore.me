@@ -134,6 +134,7 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
     height: 100%;
     display: block;
     opacity: 1.0;
+    object-fit: cover;
 }
 
 .gallery-item img:hover {
