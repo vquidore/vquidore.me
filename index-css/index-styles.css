@@ -118,7 +118,8 @@ li::before{
 https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javascript/ */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     gap: 10px;
     padding: 20px;
     margin-top: 5px;
