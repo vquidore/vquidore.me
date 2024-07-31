@@ -107,7 +107,7 @@ li::before{
 }
 
 video {
-    width: 100% !important;
+    width: 50% !important;
     height: auto !important;
     display: block;
     margin: auto;
