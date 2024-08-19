@@ -162,7 +162,7 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 }
 
 .typing-container {
-    margin-top: 520px;
+    margin-top: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +177,7 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 
 .input-cursor {
     display: inline-block;
-    width: 2px;
+    width: 4px;
     height: 108px;
     background-color: black;
     margin-left: 8px;
