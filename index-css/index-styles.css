@@ -162,7 +162,9 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 }
 
 .typing-container {
-    margin-top: 500px;
+    margin-top: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
