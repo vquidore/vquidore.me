@@ -160,3 +160,26 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 .gallery-item img:hover {
     opacity: 0.5;
 }
+
+.typing-container {
+    margin-top: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 108px;
+    background-color: black;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
