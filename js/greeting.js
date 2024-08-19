@@ -35,14 +35,14 @@ const carouselText = [
     {text: "Hi, hello! I'm V. Welcome to my website!"}
 ]
   
-async function carousel(carouselList, eleRef) {
+async function carousel() {
     var i = 0;
     while(true) {
-        await typeSentence(carouselList[i].text, eleRef);
+        await typeSentence(carouselText[i].text, "sentence");
         await waitForMs(1500);
-        await deleteSentence(eleRef);
+        await deleteSentence("sentence");
         await waitForMs(500);
         i++
-        if(i >= carouselList.length) {i = 0;}
+        if(i >= carouselText.length) {i = 0;}
     }
 }
