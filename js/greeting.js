@@ -34,15 +34,15 @@ async function deleteSentence(eleRef) {
     }
 }
   
-async function carousel() {
+async function carousel(carouselList, eleRef) {
     var i = 0;
     while(true) {
-        await typeSentence(carouselText[i].text, "sentence");
-        await waitForMs(1500);
-        await deleteSentence("sentence");
-        await waitForMs(500);
-        i++
-        if(i >= carouselText.length) {i = 0;}
+      await typeSentence(carouselList[i].text, eleRef);
+      await waitForMs(1500);
+      await deleteSentence(eleRef);
+      await waitForMs(500);
+      i++
+      if(i >= carouselList.length) {i = 0;}
     }
 }
 
