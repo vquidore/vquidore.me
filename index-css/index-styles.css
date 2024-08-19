@@ -169,6 +169,7 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
     justify-content: center;
     align-items: center;
     font-size: 108px;
+    font-weight: bold;
     font-family:'Courier New', Courier, monospace;
 }
 
