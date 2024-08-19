@@ -7,7 +7,8 @@ header {
     justify-content: space-between;
     align-items: baseline;
     padding-left: 20px;
-    background-color: antiquewhite;
+    background-color: black;
+    color:antiquewhite;
 }
   
 nav {
@@ -16,12 +17,18 @@ nav {
     font-weight: bold;
 }
 
+nav a {
+    color: antiquewhite;
+}
+
 a {
     color: black;
     text-decoration: underline;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
+
+
 
 a:hover {
     color:darkcyan;
