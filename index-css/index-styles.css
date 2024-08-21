@@ -30,7 +30,6 @@ a {
 
 footer {
     background-color: black;
-    color: antiquewhite;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding-left: 20px;
@@ -38,6 +37,10 @@ footer {
     position:absolute;
     bottom: 0;
     height:60px;
+}
+
+footer a {
+    color: antiquewhite;
 }
 
 
