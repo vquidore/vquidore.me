@@ -28,7 +28,7 @@ a {
     font-family: 'Courier New', Courier, monospace;
 }
 
-footer {
+.footer {
     background-color: black;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -39,7 +39,7 @@ footer {
     height:60px;
 }
 
-footer a {
+.footer a {
     color: antiquewhite;
 }
 
