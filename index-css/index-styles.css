@@ -28,6 +28,13 @@ a {
     font-family: 'Courier New', Courier, monospace;
 }
 
+footer {
+    background-color: black;
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-left: 20px;
+}
 
 
 a:hover {
