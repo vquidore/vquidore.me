@@ -219,3 +219,13 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
     margin:auto auto;
     font-size: 18px;
 }
+
+.comedy-img {
+    width:100%;
+    height:auto;
+}
+
+.comedy-img img {
+    width:75%;
+    margin:auto;
+}
