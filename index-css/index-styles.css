@@ -213,3 +213,8 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
     margin-left: 8px;
     animation: blink .6s linear infinite alternate;
 }
+
+.comedy-text-container {
+    width:50%;
+    margin:auto auto;
+}
