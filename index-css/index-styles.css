@@ -221,8 +221,9 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 }
 
 .comedy-img {
-    width:100%;
+    width:75%;
     height:auto;
+    margin:auto;
 }
 
 .comedy-img img {
