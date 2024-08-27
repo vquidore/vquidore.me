@@ -215,9 +215,15 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 }
 
 .comedy-text-container {
-    width:75%;
+    width:85%;
     margin:auto auto;
     font-size: 18px;
+    display:flex;
+}
+
+.comedy-text-container p {
+    margin-top:50px;
+    width:70%;
 }
 
 .comedy-img {
@@ -227,6 +233,7 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 }
 
 .comedy-img img {
-    width:75%;
+    width:100%;
     margin:auto;
+    display:inline-flex;
 }
