@@ -217,20 +217,21 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 .comedy-text-container {
     width:65%;
     margin:auto auto;
-    display:flex;
 }
 
 .comedy-text-container h1 {
     text-align: center;
     font-weight: normal;
-    font-size: 44px;
+    font-size: 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .comedy-text-container p {
     margin-top:50px;
     width:90%;
     font-size: 18px;
-    padding-top:40px;
+    padding-top:20px;
 }
 
 .comedy-img {
