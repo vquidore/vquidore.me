@@ -237,3 +237,22 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
     margin:auto;
     display:inline-flex;
 }
+
+.radio-show-container {
+    width:85%;
+    margin:auto auto;
+    font-size: 24px;
+    display:flex;
+}
+
+.radio-show-container p {
+    margin-top:50px;
+    width:70%;
+}
+
+.radio-show-container img {
+    width:75%;
+    height:auto;
+    margin:auto;
+    display:inline-flex;
+}
