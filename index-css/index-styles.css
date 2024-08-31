@@ -151,6 +151,10 @@ ul li {
     padding: 10px;
 }
 
+.screenwriting-subgroup li::before{
+    content:"📺 ";
+}
+
 .cs-writing-subgroup {
     display: inline;
     margin-left: auto;
@@ -158,6 +162,10 @@ ul li {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.17em;
     padding: 10px;
+}
+
+.cs-writing-subgroup li::before{
+    content:"💻 ";
 }
 
 .wilson-center-subgroup {
@@ -170,7 +178,7 @@ ul li {
 }
 
 .wilson-center-subgroup li::before{
-    content:"&#127918;";
+    content:"🎮 ";
 }
 
 .comedy-subgroup {
@@ -183,7 +191,7 @@ ul li {
 }
 
 .comedy-subgroup li::before{
-    content:"🕺";
+    content:"🕺 ";
 }
 
 video {
