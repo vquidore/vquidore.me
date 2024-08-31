@@ -135,11 +135,44 @@ img {
 ul {
     list-style-type: none;
     font-weight:normal;
+    font-size: 18px;
 }
 
 ul li {
     margin-bottom: 10px;
 }
+
+.screenwriting-subgroup {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.17em;
+    padding: 10px;
+}
+
+.cs-writing-subgroup {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.17em;
+    padding: 10px;
+}
+
+.wilson-center-subgroup {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.17em;
+    padding: 10px;
+}
+
+.wilson-center-subgroup li::before{
+    content:"&#127918;";
+}
+
 .comedy-subgroup {
     display: inline;
     margin-left: auto;
