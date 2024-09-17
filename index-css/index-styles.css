@@ -319,7 +319,7 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 }
 
 .mission-text {
-    display:flex;
+    display:block;
     justify-content: center;
     align-items:center;
     font-size: 20px;
