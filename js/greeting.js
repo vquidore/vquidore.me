@@ -3,9 +3,9 @@
 */
 
 const carouselText = [
-    {text: "Hi!"},
-    {text: "Hello!"},
-    {text: "Hi, hello! I'm V. Welcome to my website!"}
+    {text: "Hi! I'm V."},
+    {text: "Thanks for being here."},
+    {text: "Welcome to my website!"}
 ]
 
 $( document ).ready(async function() {

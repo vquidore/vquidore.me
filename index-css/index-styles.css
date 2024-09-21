@@ -237,7 +237,7 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 108px;
+    font-size: 96px;
     font-weight: bold;
     font-family:'Courier New', Courier, monospace;
 }
@@ -252,7 +252,7 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 .input-cursor {
     display: inline-block;
     width: 4px;
-    height: 108px;
+    height: 96px;
     background-color: black;
     margin-left: 8px;
     animation: blink .6s linear infinite alternate;
