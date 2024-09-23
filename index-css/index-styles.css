@@ -232,13 +232,13 @@ https://www.geeksforgeeks.org/how-to-make-image-gallery-using-html-css-and-javas
 
 .typing-container {
     margin-top: 240px;
-    margin-bottom:300px;
+    margin-bottom:500px;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 96px;
+    font-size: 84px;
     font-weight: medium;
     font-family:'Courier New', Courier, monospace;
 }
