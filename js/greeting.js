@@ -21,7 +21,6 @@ async function typeSentence(sentence, eleRef, delay = 100) {
     while(i < letters.length) {
       await waitForMs(delay);
       $(eleRef).append(letters[i]);
-      typingSound.currentTime = 0; // Reset sound to start
       typingSound.play(); // Play typing sound
       i++
     }
@@ -38,7 +37,6 @@ async function deleteSentence(eleRef) {
       await waitForMs(100);
       letters.pop();
       $(eleRef).html(letters.join(""));
-      deletingSound.currentTime = 0; // Reset the deleting sound
       deletingSound.play(); //play the deleting sound
     }
 }
