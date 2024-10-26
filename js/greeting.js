@@ -18,12 +18,13 @@ async function typeSentence(sentence, eleRef, delay = 100) {
     let i = 0;
     const typingSound = document.getElementById('typing-sound');
 
+    typingSound.play(); // Play typing sound
     while(i < letters.length) {
       await waitForMs(delay);
       $(eleRef).append(letters[i]);
-      typingSound.play(); // Play typing sound
       i++
     }
+    typingSound.pause();
     return;
 }
 
@@ -33,12 +34,14 @@ async function deleteSentence(eleRef) {
     let i = 0;
     const deletingSound = document.getElementById('deleting-sound');
 
+    deletingSound.play(); //play the deleting sound
     while(letters.length > 0) {
       await waitForMs(100);
       letters.pop();
       $(eleRef).html(letters.join(""));
-      deletingSound.play(); //play the deleting sound
     }
+    deletingSound.pause();
+
 }
   
 async function carousel(carouselList, eleRef) {
