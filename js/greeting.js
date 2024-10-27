@@ -16,15 +16,15 @@ $( document ).ready(async function() {
 async function typeSentence(sentence, eleRef, delay = 100) {
     const letters = sentence.split("");
     let i = 0;
-    const typingSound = document.getElementById('typing-sound');
+    //const typingSound = document.getElementById('typing-sound');
 
-    typingSound.play(); // Play typing sound
+    //typingSound.play(); // Play typing sound
     while(i < letters.length) {
       await waitForMs(delay);
       $(eleRef).append(letters[i]);
       i++
     }
-    typingSound.pause();
+    //typingSound.pause();
     return;
 }
 
@@ -32,15 +32,15 @@ async function deleteSentence(eleRef) {
     const sentence = $(eleRef).html();
     const letters = sentence.split("");
     let i = 0;
-    const deletingSound = document.getElementById('deleting-sound');
+    //const deletingSound = document.getElementById('deleting-sound');
 
-    deletingSound.play(); //play the deleting sound
+    //deletingSound.play(); //play the deleting sound
     while(letters.length > 0) {
       await waitForMs(100);
       letters.pop();
       $(eleRef).html(letters.join(""));
     }
-    deletingSound.pause();
+    //deletingSound.pause();
 
 }
   
